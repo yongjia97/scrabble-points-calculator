@@ -6,15 +6,15 @@ This is the front end for the Scrabble Points Calculator application.
 
 ### installation
 1. Clone the repository to your local machine from my git repo:
-
+# https://github.com/yongjia97/scrabble-points-calculator.git
 ### Run frontend in local
 once cloned to your local machine:
 1. Change to the project directory
-    cd scrabble-points-calculator/frontend
+   # cd scrabble-points-calculator/frontend
 2. Install dependencies
    #  npm install
 3. Start the development server
-    npm start
+   #  npm start
 
 ## The front end application running on port 3000.You can access your front end application in the browser (http://localhost:3000) ##
 
@@ -28,14 +28,14 @@ step to create-react-app
 
 ### installation
 1. Clone the repository to your local machine from my git repo: ( please ignore if you clone it before)
-
+# https://github.com/yongjia97/scrabble-points-calculator.git
 ### Run backend in local
 once cloned to your local machine:
 1. Change to the project directory 
-  cd scrabble-points-calculator/server  
+  # cd scrabble-points-calculator/server  
 
 2. Install dependencies
-    npm install
+  # npm install
 
 3. Configure mysql connection
   a. Open the server.js file in the src folder.
@@ -52,6 +52,6 @@ once cloned to your local machine:
     );
 
 5. Run the server
-    npm start
+  # npm start
 
 ## The back end application running on port 8080.The server is a back-end application responsible for processing HTTP requests and providing data and services to the front-end application.It is running at (http://localhost:8080) ##
