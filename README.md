@@ -1,5 +1,5 @@
 # Scrabble points calculator
-# use react modal and react toastify 
+# Utilise react modal and react toastify 
 This is the front end for the Scrabble Points Calculator application.
 ### prerequisities
 1. Install node.js
