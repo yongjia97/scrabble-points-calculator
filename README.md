@@ -22,6 +22,7 @@ once cloned to your local machine:
 ### Backend
 This is the backend server for the Scrabble Points Calculator application.
 step to create-react-app
+
 ### prerequisities
 1. Install node.js ( please ignore if have installed node.js)
 2. MySQL server (or equivalent database)
