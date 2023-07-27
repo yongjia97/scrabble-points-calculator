@@ -43,7 +43,7 @@ once cloned to your local machine:
   a. Open the server.js file in the src folder.
   b. Update the MySQL connection configuration with your database credentials (host, user, password, and database name).
 
-5. Create database table
+4. Create database table
    
   a. Open your MySQL client or terminal and connect to your MySQL server.
   b. Run the following SQL query to create the 'scores_and_words' table:
@@ -54,7 +54,7 @@ once cloned to your local machine:
     scrabble_word VARCHAR(255) NOT NULL UNIQUE
     );
 
-7. Run the server
+5. Run the server
   # npm start
 
 ## The back end application running on port 8080.The server is a back-end application responsible for processing HTTP requests and providing data and services to the front-end application.It is running at (http://localhost:8080) ##
