@@ -12,7 +12,7 @@ once cloned to your local machine:
 1. Change to the project directory
     cd scrabble-points-calculator/frontend
 2. Install dependencies
-    npm install
+   #  npm install
 3. Start the development server
     npm start
 
