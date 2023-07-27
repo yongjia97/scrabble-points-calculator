@@ -1,0 +1,76 @@
+
+.scrabble-container {
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 20px;
+}
+
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow tiles to wrap to the next row if they exceed the container width */
+  justify-content: center; 
+}
+  .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .tile-input {
+    text-align: center;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .tile-label {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  
+  .score-container {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .score-label {
+    font-weight: bold;
+  }
+  
+
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .reset-button,
+  .save-button,
+  .view-button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4e82c5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .reset-button:hover,
+  .save-button:hover,
+  .view-button:hover {
+    background-color: #45a049;
+  }
+
+  
