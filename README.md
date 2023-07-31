@@ -58,3 +58,7 @@ once cloned to your local machine:
   # npm start
 
 ## The back end application running on port 8080.The server is a back-end application responsible for processing HTTP requests and providing data and services to the front-end application.It is running at (http://localhost:8080) ##
+
+### Execute the unit test for ScrabblePointsCalculator and TopScoreView components. You can see the results in your terminal.
+  # cd scrabble-points-calculator/frontend
+  # npm test
