@@ -19,6 +19,8 @@ once cloned to your local machine:
 
 
 ### Backend
+The back end application running on port 8080.The server is a back-end application responsible for processing HTTP requests and providing data and services to the front-end application.It is running at (http://localhost:8080) ##
+
 This is the backend server for the Scrabble Points Calculator application.
 step to create-react-app
 
@@ -55,7 +57,6 @@ once cloned to your local machine:
 
 5. Run the server
   # npm start
- ##The back end application running on port 8080.The server is a back-end application responsible for processing HTTP requests and providing data and services to the front-end application.It is running at (http://localhost:8080) ##
 
 1. Execute the unit test for ScrabblePointsCalculator and TopScoreView components. You can see the results in your terminal.
   # cd scrabble-points-calculator/frontend
