@@ -6,12 +6,14 @@ import TopScoreView from '../TopScoreView/TopScoreView';
 import tileScoringRules from '../../constants/tileScoringRules';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 const ScrabblePointsCalculator = props => {
 
 const backendUrl ='http://localhost:8080';
 const {tiles,setTile,score,setScore,resetTiles} = props;
 const inputRefs = useRef([]);
 const [showTopScores, setShowTopScores] = useState(false);
+
   useEffect(() => {
     //update the inputrefs when there is any tiles change
     inputRefs.current = inputRefs.current.slice(0, tiles.length);
@@ -26,7 +28,6 @@ const [showTopScores, setShowTopScores] = useState(false);
     });
     setScore(newScore);
   }, [setScore]);
-  
   
   // const calculateTotalScore = (newTiles) => {
   //   let newScore = 0;
@@ -104,7 +105,6 @@ const [showTopScores, setShowTopScores] = useState(false);
     }
   }, []);
 
-
   const handleResetTiles = () => {
     if (inputRefs.current[0]) {
       inputRefs.current[0].focus();
@@ -148,13 +148,13 @@ const [showTopScores, setShowTopScores] = useState(false);
   };
 
   return (
-    <div className="scrabble-container">
+    <div className="scrabble-container" data-testid="scrabble-container">
       <h1>Scrabble Points Calculator</h1>
-      <div className="tiles-container">
+      <div className="tiles-container" data-testid="tiles-container">
       {tiles.map((tile, index) => (
           <div key={index} className="tile">
             <input
-              id={`tile-input-${index}`}
+              data-testid={`tile-input-${index}`}
               type="text"
               maxLength={1}
               value={tile}
@@ -169,7 +169,7 @@ const [showTopScores, setShowTopScores] = useState(false);
           </div>
         ))}
       </div>
-      <div className="score-container">
+      <div className="score-container" data-testid="score-container">
         <div className="score-label">Score: {score}</div>
       </div>
       <div className="button-container">
@@ -193,12 +193,11 @@ const mapState = state => {
 };
 
 const mapDispatch = dispatch => ({
-    resetTiles: dispatch.ScrabblePointsModel.resetTiles,
-    setTile: dispatch.ScrabblePointsModel.setTile,
-    setScore: dispatch.ScrabblePointsModel.setScore
-  });
+  resetTiles: () => dispatch.ScrabblePointsModel.resetTiles(),
+  setTile: (payload) => dispatch.ScrabblePointsModel.setTile(payload),
+  setScore: (payload) => dispatch.ScrabblePointsModel.setScore(payload),
+});
 export default connect(mapState,mapDispatch)(ScrabblePointsCalculator);
-
 ScrabblePointsCalculator.propTypes= {
     tiles: propTypes.array,
     score: propTypes.number,

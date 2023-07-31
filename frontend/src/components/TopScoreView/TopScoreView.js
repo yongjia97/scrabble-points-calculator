@@ -27,7 +27,7 @@ const TopScoreView = props => {
           justifyContent: 'space-between', // Align items horizontally with space between them
           alignItems: 'center', 
           padding: '10px 20px', 
-          borderBottom: '1px solid #ccc', // Add a border at the bottom of the header
+          borderBottom: '1px solid #ccc', 
         },
         closeButton: {
           fontSize: '16px',
@@ -80,7 +80,7 @@ const mapState = state => {
     };
   };
   
-  const mapDispatch = dispatch => {
+const mapDispatch = dispatch => {
     return {
         fetchTopScores: dispatch.ScrabblePointsModel.fetchTopScores
     };
