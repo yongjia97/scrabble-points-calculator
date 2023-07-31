@@ -1,5 +1,4 @@
-# Scrabble points calculator
-# Utilise react modal and react toastify 
+#[Scrabble points calculator] - utilise react modal and react toastify 
 This is the front end for the Scrabble Points Calculator application.
 ### prerequisities
 1. Install node.js
@@ -56,9 +55,8 @@ once cloned to your local machine:
 
 5. Run the server
   # npm start
+ ##The back end application running on port 8080.The server is a back-end application responsible for processing HTTP requests and providing data and services to the front-end application.It is running at (http://localhost:8080) ##
 
-## The back end application running on port 8080.The server is a back-end application responsible for processing HTTP requests and providing data and services to the front-end application.It is running at (http://localhost:8080) ##
-
-### Execute the unit test for ScrabblePointsCalculator and TopScoreView components. You can see the results in your terminal.
+1. Execute the unit test for ScrabblePointsCalculator and TopScoreView components. You can see the results in your terminal.
   # cd scrabble-points-calculator/frontend
   # npm test
