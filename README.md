@@ -6,7 +6,9 @@ This is the front end for the Scrabble Points Calculator application.
 ### installation
 1. Clone the repository to your local machine from my git repo:
 # https://github.com/yongjia97/scrabble-points-calculator.git
+
 ### Run frontend in local
+The front end application running on port 3000.You can access your front end application in the browser (http://localhost:3000)
 once cloned to your local machine:
 1. Change to the project directory
    # cd scrabble-points-calculator/frontend
@@ -14,9 +16,6 @@ once cloned to your local machine:
    #  npm install
 3. Start the development server
    #  npm start
-
-## The front end application running on port 3000.You can access your front end application in the browser (http://localhost:3000) ##
-
 
 ### Backend
 The back end application running on port 8080.The server is a back-end application responsible for processing HTTP requests and providing data and services to the front-end application.It is running at (http://localhost:8080) ##
